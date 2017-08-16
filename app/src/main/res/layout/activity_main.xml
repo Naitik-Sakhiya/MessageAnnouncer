@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical">
+    <LinearLayout
+	    android:id="@+id/adLayout" 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:orientation="vertical"
+	    android:visibility="invisible"
+	    ></LinearLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_actionbar_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="#00000000"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/ic_menu_setting" />
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.naitiks.messageannouncer.MainActivity" >
+
+    <ListView
+        android:id="@+id/listView_msgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:divider="#ffffff"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="60dp" >
+    </ListView>
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:shrinkColumns="0,1,2"
+        android:stretchColumns="0,1,2" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_inbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/inbox"
+                android:background="#BDBDBD"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_Outbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/outbox"
+              android:background="#BDBDBD"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_draft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/draft"
+                android:background="#BDBDBD"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+</LinearLayout>

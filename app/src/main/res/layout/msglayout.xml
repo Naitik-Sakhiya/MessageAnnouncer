@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+	android:layout_margin="10dp"
+    android:gravity="center"    
+    android:background="#000000"
+    android:orientation="vertical" >
+	<LinearLayout android:layout_height="wrap_content"
+	    android:layout_width="300dp"
+	    android:background="#848484"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    <ImageView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:contentDescription="@string/action_settings"
+	        android:src="@drawable/ic_launcher"/>
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/app_name"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="#ffffff" />
+
+	</LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView_sender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#99ffffff"
+        android:text="" />
+    <TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="0,1,2"
+    android:layout_marginTop="15dp">
+<TableRow 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:textColor="#ffffff"
+        android:text="@string/reply" />
+    <Button
+        android:layout_marginLeft="3dp"
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#848484"
+        android:textColor="#ffffff"
+        android:text="@string/cncl" />
+    </TableRow>
+</TableLayout>
+</LinearLayout>

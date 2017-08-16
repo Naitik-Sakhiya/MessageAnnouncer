@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Message Announcer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="inbox">Inbox</string>
+    <string name="outbox">Outbox</string>
+    <string name="draft">Draft</string>
+    <string name="appPref">SMS Notifier Prefences</string>
+    <string name="readmsg">Read Message</string>
+    <string name="allwReading">Allow to Read Incoming Messages</string>
+    <string name="playsilent">Play in Silent Mode</string>
+    <string name="ttsPref">Text to Speech Prefences</string>
+    <string name="setlang">Set Language</string>
+    <string name="selectlang">Select your voice language</string>
+    <string name="ttspeed">TTS Speed</string>
+    <string name="readingspd">Set reading speed</string>
+    <string name="pitcs">TTS Pitcs</string>
+    <string name="setdegree">Set degree of highness of lowness of tone</string>
+    <string name="cncl">Cancel</string>
+    <string name="send">Send</string>
+    <string name="hide">Hide</string>
+    <string name="reply">Reply</string>
+    <string name="us">English (US)</string>
+    <string name="uk">English (UK)</string>
+    <string name="German">German</string>
+    <string name="Italian">Italian</string>
+    <string name="Korean">Korean</string>
+    <string name="slower">Slower</string>
+    <string name="slow">Slow</string>
+    <string name="normal">Normal</string>
+    <string name="fast">Fast</string>
+    <string name="faster">Faster</string>
+    <string name="sr">Sender and Message</string>
+    <string name="s">Only Sender</string>
+    <string name="m">Only Message</string>
+    <string name="dnt">Dont Read Any</string>
+
+</resources>

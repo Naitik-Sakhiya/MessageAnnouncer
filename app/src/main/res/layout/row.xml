@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dp" 
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/action_settings"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/lblNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#58FAF4"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lblMsg"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/lblNumber"
+        android:layout_alignStart="@+id/lblNumber"
+        android:layout_below="@+id/lblNumber"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#99ffffff" />
+
+</RelativeLayout>

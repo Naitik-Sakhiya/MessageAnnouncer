@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radiogroup_read"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radioButton_both"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sr" />
+
+    <RadioButton
+        android:id="@+id/radioButton_onlySender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s" />
+
+    <RadioButton
+        android:id="@+id/radioButton_onlyMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m" />
+
+    <RadioButton
+        android:id="@+id/radioButton_dntRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dnt" />
+</RadioGroup>
+
